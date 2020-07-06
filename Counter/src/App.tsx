@@ -7,29 +7,29 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Styled from 'styled-components/native';
+import styled from 'styled-components/native';
 
-const ScrollView = Styled.ScrollView`
+const ScrollView = styled.ScrollView`
   background-color: ${Colors.lighter};
 `;
 
-const Body = Styled.View`
+const Body = styled.View`
   background-color: ${Colors.white};
 `;
 
-const SectionContainer = Styled.View`
+const SectionContainer = styled.View`
   margin-top: 32px;
   padding-horizontal: 24px;
 `;
 
-const SectionDescription = Styled.Text`
+const SectionDescription = styled.Text`
   margin-top: 8px;
   font-size: 18px;
   font-weight: 400;
   color: ${Colors.dark};
 `;
 
-const HighLight = Styled.Text`
+const HighLight = styled.Text`
   font-weight: 700;
 `;
 
@@ -40,9 +40,7 @@ const App = ({}: Props) => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
           <Header />
           <Body>
             <SectionContainer>
