@@ -1,14 +1,4 @@
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
 import styled from 'styled-components/native';
 
 import {TodoListContextProvider} from '~/Context/TodoListContext';
@@ -22,7 +12,7 @@ const Container = styled.View`
 
 interface Props {}
 
-const App = ({}: Props) => {
+const App = () => {
   return (
     <TodoListContextProvider>
       <Container>
